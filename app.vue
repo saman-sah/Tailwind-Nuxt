@@ -1,5 +1,6 @@
 <template>
-  <div>
-    <h1 class="text-red-600">Saman</h1>
-  </div>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
+
 </template>
