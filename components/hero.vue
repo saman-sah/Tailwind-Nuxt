@@ -5,7 +5,7 @@
   >
     <div class="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl: padding-x pt-28">
       <p>Our Summer Collection</p>
-      <h1>
+      <h1 class="text-red-400">
         <span>The New Arrival</span>
         <br />
         <span>Nike</span>
