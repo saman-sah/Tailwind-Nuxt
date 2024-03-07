@@ -1,10 +1,10 @@
 <template>
     <div 
         :class="[
-            bigShoeImg === imgUrl ? 'border-coral-red' : 'border-transparent'
-        ],
-         'cursor-pointer max-sm:flex-1'"        
-         @click="handleClick()"
+            bigShoeImg === imgUrl.bigShoe ? ' border-coral-red' : 'border-transparent' ,
+            'cursor-pointer max-sm:flex-1 border-2 rounded-xl'
+        ]"        
+         @click="handleClick(imgUrl.bigShoe)"
     > 
 
         <div class="flex justify-center items-center bg-card bg-center bg-cover sm:w-40 sm:h-40 rounded-xl max-sm:p-4">
@@ -16,7 +16,6 @@
                 class="object-contain"
             >
         </div>
-        dsdsdsd
     </div>
 </template>
 <script setup>
@@ -29,13 +28,11 @@ const props = defineProps({
         type: String,
         default: ''
     },
-    changeBigShoeImg: {
-        type: Function,
-        default: () => {}
-    }
 })
-console.log('props', props);
-function handleClick() {
-console.log('hanle click');
+const emit = defineEmits([
+    'setBigImage'
+])
+function handleClick(img) {
+    emit('setBigImage', img)
 }
 </script>

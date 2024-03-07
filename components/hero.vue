@@ -25,7 +25,7 @@
 
     <div class="relative flex-1 justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center">
       <img 
-        :src="bigShoe1" 
+        :src="bigShoeImage" 
         alt="shoe collection"  
         width="610px" 
         height="500px"
@@ -35,8 +35,8 @@
         <div v-for="(shoe, index) in shoes" :key="index">
           <SliderShoeCard 
             :imgUrl="shoe"
-            bigShoeImg=""
-            :changeBigShoeImg="()=> {}"
+            :bigShoeImg="bigShoeImage"
+            @setBigImage="(img) => bigShoeImage = img"
           />
         </div>
       </div>
@@ -49,4 +49,6 @@
 import { bigShoe1 } from '~/assets/images'
 import { arrowRight } from '~/assets/icons'
 import { statistics, shoes } from '~/utils/constant.js'
+
+const bigShoeImage = ref(bigShoe1)
 </script>
