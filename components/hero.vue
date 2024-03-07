@@ -22,10 +22,31 @@
         </div>
       </div>
     </div>
+
+    <div class="relative flex-1 justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center">
+      <img 
+        :src="bigShoe1" 
+        alt="shoe collection"  
+        width="610px" 
+        height="500px"
+        class="object-contain relative z-10"
+      />
+      <div class="flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6">
+        <div v-for="(shoe, index) in shoes" :key="index">
+          <SliderShoeCard 
+            :imgUrl="shoe"
+            bigShoeImg=""
+            :changeBigShoeImg="()=> {}"
+          />
+        </div>
+      </div>
+
+    </div>
   </section>
 </template>
 
 <script setup>
+import { bigShoe1 } from '~/assets/images'
 import { arrowRight } from '~/assets/icons'
-import {statistics } from '~/utils/constant.js'
+import { statistics, shoes } from '~/utils/constant.js'
 </script>
