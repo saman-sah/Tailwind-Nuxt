@@ -1,4 +1,10 @@
-
+import { 
+  facebook, 
+  instagram, 
+  shieldTick, 
+  support, 
+  truckFast, 
+  twitter } from "../assets/icons";
 import { 
   bigShoe1, 
   bigShoe2, 
@@ -11,7 +17,8 @@ import {
   shoe7, 
   thumbnailShoe1, 
   thumbnailShoe2, 
-  thumbnailShoe3 } from "../assets/images";
+  thumbnailShoe3 } from "../assets/images"
+
 export const NAV_LINKS = [
   {
     to: '#home',
@@ -46,6 +53,7 @@ export const statistics = [
   },
   
 ]
+
 export const shoes = [
   {
       thumbnail: thumbnailShoe1,
@@ -59,7 +67,7 @@ export const shoes = [
       thumbnail: thumbnailShoe3,
       bigShoe: bigShoe3,
   },
-];
+]
 
 export const products = [
   {
@@ -82,4 +90,22 @@ export const products = [
       name: "Nike Air Jordan-001",
       price: "$230.20",
   },
-];
+]
+
+export const services = [
+  {
+      imgURL: truckFast,
+      label: "Free shipping",
+      subtext: "Enjoy seamless shopping with our complimentary shipping service."
+  },
+  {
+      imgURL: shieldTick,
+      label: "Secure Payment",
+      subtext: "Experience worry-free transactions with our secure payment options."
+  },
+  {
+      imgURL: support,
+      label: "Love to help you",
+      subtext: "Our dedicated team is here to assist you every step of the way."
+  },
+]
