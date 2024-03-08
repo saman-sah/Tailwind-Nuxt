@@ -28,12 +28,19 @@
       </div>
   </div>
 
-  <div class="">
-
+  <div class="flex-1 flex justify-center items-center">
+    <img 
+      :src="shoe8" 
+      alt="shoe8" 
+      width="500px"
+      height="522px"
+      class="object-contain"
+    >
   </div>
 
 </section>
 </template>
 
 <script setup>
+import { shoe8 } from '~/assets/images'
 </script>
