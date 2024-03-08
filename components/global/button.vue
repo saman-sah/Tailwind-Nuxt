@@ -1,5 +1,9 @@
 <template>
-  <button class="flex justify-center items-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none bg-coral-red rounded-full text-white border-coral-red">
+  <button :class="[
+      textColor,borderColor,backgroundColor,fontFamily,textSize,
+      'flex justify-center items-center gap-2 px-7 py-4 border leading-none rounded-full'
+    ]"
+  >    
     {{ label }}
     <img 
       v-if="iconUrl"
@@ -19,6 +23,26 @@ defineProps({
   iconUrl: {
     type: String,
     default: ''
+  },
+  textColor: {
+    type: String,
+    default: 'text-white'
+  },
+  borderColor: {
+    type: String,
+    default: 'border-coral-red'
+  },
+  backgroundColor: {
+    type: String,
+    default: 'bg-coral-red'
+  },
+  fontFamily: {
+    type: String,
+    default: 'font-montserrat'
+  },
+  textSize: {
+    type: String,
+    default: 'text-lg'
   }
 })
 </script>
