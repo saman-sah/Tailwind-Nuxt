@@ -13,10 +13,18 @@
     </p>
 
     <div class="mt-24 flex flex-1 justify-evenly items-center max-lg:flex-col gap-14">
-
+      <div v-for="(review, index) in reviews" :key="index">
+        <ReviewsItem
+          :imgURL="review.imgURL"
+          :customerName="review.customerName"
+          :rating="review.rating"
+          :feedback="review.feedback"
+        />
+      </div>
     </div>
   </section>
 </template>
 
 <script setup>
+import { reviews } from '~/utils/constant'
 </script>

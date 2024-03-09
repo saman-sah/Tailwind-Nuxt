@@ -1,6 +1,6 @@
 <template>
   <button :class="[
-      textColor,borderColor,backgroundColor,fontFamily,textSize,
+      textColor, borderColor, backgroundColor, fontFamily, textSize, {'w-full': fullWidth },
       'flex justify-center items-center gap-2 px-7 py-4 border leading-none rounded-full'
     ]"
   >    
@@ -43,6 +43,14 @@ defineProps({
   textSize: {
     type: String,
     default: 'text-lg'
+  },
+  textSize: {
+    type: String,
+    default: 'text-lg'
+  },
+  fullWidth: {
+    type: Boolean,
+    default: false
   }
 })
 </script>
