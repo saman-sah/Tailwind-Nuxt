@@ -126,3 +126,40 @@ export const reviews = [
     feedback: "The product not only met but exceeded my expectations. I'll definitely be a returning customer!"
   }
 ]
+
+export const footerLinks = [
+  {
+      title: "Products",
+      links: [
+          { label: "Air Force 1", to: "/" },
+          { label: "Air Max 1", to: "/" },
+          { label: "Air Jordan 1", to: "/" },
+          { label: "Air Force 2", to: "/" },
+          { label: "Nike Waffle Racer", to: "/" },
+          { label: "Nike Cortez", to: "/" },
+      ],
+  },
+  {
+      title: "Help",
+      links: [
+          { label: "About us", to: "/" },
+          { label: "FAQs", to: "/" },
+          { label: "How it works", to: "/" },
+          { label: "Privacy policy", to: "/" },
+          { label: "Payment policy", to: "/" },
+      ],
+  },
+  {
+      title: "Get in touch",
+      links: [
+          { label: "customer@nike.com", to: "mailto:customer@nike.com" },
+          { label: "+92554862354", to: "tel:+92554862354" },
+      ],
+  },
+]
+
+export const socialMedia = [
+  { src: facebook, alt: "facebook logo" },
+  { src: twitter, alt: "twitter logo" },
+  { src: instagram, alt: "instagram logo" },
+]
